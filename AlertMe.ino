@@ -1,4 +1,15 @@
+/* 
+  Code for AlertMe by Mary Floren.
+  
+  Reads input from a TMP36 temperature sensor
+  and sends a text through a Motorola c168i if
+  the temperature drops below 50 degrees
 
+ Sources: 
+ http://sheffiel.blogspot.com/2011/02/remote-car-starter-controlling-motorola.html
+ https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-7-reading-a-temperature-sensor
+ 
+*/
 #include <SoftwareSerial.h>
 
 SoftwareSerial mySerial(3, 2); // RX, TX pins
