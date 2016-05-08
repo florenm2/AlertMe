@@ -48,12 +48,10 @@ delay(1500);
 mySerial.println("AT+CMSS=1"); // Sends message at index of 1
 
 
-delay(1500);
-digitalWrite(13, HIGH); // Turn LED on.
 delay(10000);
 mySerial.println("AT+CMGD=1"); // Deletes message at index of 1
-digitalWrite(13, LOW); // Turn LED off.
-delay(250);
+digitalWrite(13, LOW); // LED off
+delay(60000); // wait one minute
 }
 
 }
